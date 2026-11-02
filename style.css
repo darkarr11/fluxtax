@@ -157,11 +157,11 @@ h1, h2, h3, h4 { letter-spacing: -.01em; }
 .brand svg { width: 30px; height: 30px; flex: none; }
 .site-head nav a { color: #d7efe6; text-decoration: none; font: 500 .9rem var(--font-ui); margin-left: 1.3rem; }
 .site-head nav a[aria-current] { color: #fff; border-bottom: 2px solid #5ed6aa; padding-bottom: 2px; }
-.hero { padding: 3.2rem 0 4.2rem; }
+.hero { padding-top: 3.2rem; padding-bottom: 4.2rem; }
 .hero .eyebrow { font: 700 .78rem var(--font-ui); letter-spacing: .18em; text-transform: uppercase; color: #7ee0b5; }
 .hero h1 { font: 800 clamp(2.1rem, 6.5vw, 3.3rem)/1.12 var(--font-ui); margin: .6rem 0 1rem; color: #fff; }
 .hero p { font-size: 1.12rem; max-width: 34em; color: #d7efe6; }
-.page-band { padding: 1.6rem 0 2.2rem; }
+.page-band { padding-top: 1.6rem; padding-bottom: 2.2rem; }
 .page-band h1 { font: 800 clamp(1.7rem, 5vw, 2.4rem)/1.15 var(--font-ui); color: #fff; }
 .page-band p { color: #d7efe6; margin-top: .5rem; }
 
@@ -179,3 +179,11 @@ article { padding: 2.2rem 0 3rem; }
 #policy blockquote { border-left: 3px solid #cfe6dc; padding-left: 1rem; color: var(--stone); margin: 1rem 0; }
 footer { background: #062a24; color: #b9d9cd; }
 @media (max-width: 480px) { .site-head nav a { margin-left: .9rem; font-size: .82rem; } .brand { font-size: 1rem; } }
+.book-card { display: flex; gap: 1.25rem; align-items: center; background: var(--white); border-radius: 12px; padding: 1rem; margin-bottom: 2rem; text-decoration: none; color: inherit; box-shadow: 0 2px 14px rgba(6,42,36,.08); border: 1px solid #e1ece7; transition: transform .15s, box-shadow .15s; }
+.book-card:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(6,42,36,.14); }
+.book-card img { width: 112px; height: auto; flex: none; border-radius: 3px 6px 6px 3px; box-shadow: 0 6px 16px rgba(0,0,0,.25); }
+.book-card > span { display: flex; flex-direction: column; gap: .3rem; font-family: var(--font-ui); }
+.book-kicker { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #2fb489; }
+.book-card strong { font-size: 1.15rem; line-height: 1.25; }
+.book-cta { margin-top: .3rem; font-weight: 700; color: #0f5c4d; }
+@media (max-width: 480px) { .book-card img { width: 88px; } .book-card strong { font-size: 1.02rem; } }
