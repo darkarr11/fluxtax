@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062a24"/>
+      <stop offset="1" stop-color="#0f5c4d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="360" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M0 250 C180 170 300 170 480 230 S780 300 960 220 S1260 140 1440 200" stroke="#7ee0b5" stroke-opacity=".55" stroke-width="3"/>
+    <path d="M0 280 C200 220 320 230 500 260 S800 320 980 250 S1280 190 1440 235" stroke="#7ee0b5" stroke-opacity=".3" stroke-width="2"/>
+    <path d="M0 215 C160 130 320 120 470 190 S760 270 940 185 S1250 95 1440 160" stroke="#c9f5e2" stroke-opacity=".22" stroke-width="2"/>
+    <path d="M0 310 C220 270 360 280 540 300 S840 340 1020 290 S1300 250 1440 275" stroke="#7ee0b5" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M0 180 C140 100 300 80 450 150 S740 230 920 150 S1240 60 1440 120" stroke="#ffffff" stroke-opacity=".08" stroke-width="1.5"/>
+  </g>
+  <g fill="#7ee0b5">
+    <circle cx="480" cy="230" r="5" fill-opacity=".8"/>
+    <circle cx="960" cy="220" r="5" fill-opacity=".8"/>
+    <circle cx="1440" cy="200" r="5" fill-opacity=".8"/>
+  </g>
+</svg>

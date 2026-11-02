@@ -9,24 +9,35 @@
 <meta property="og:url" content="https://fluxtax.com/">
 <meta property="og:title" content="Flux Tax">
 <meta property="og:description" content="Our labor should not be taxed. Our natural resources should.">
-<link rel="stylesheet" href="style.css?v=20261102">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css?v=20261102b">
+<meta property="og:image" content="https://fluxtax.com/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 </head>
 <body>
-<header><div class="wrap"><a href="/">FLUX TAX</a><nav><a href="/" aria-current=page>Home</a><a href="book.html">The Book</a></nav></div></header>
+<header class="site-head"><div class="wrap bar"><a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M5 18C9 9 13 9 16 16s7 7 11-2" fill="none" stroke="#7ee0b5" stroke-width="3" stroke-linecap="round"/></svg>FLUX TAX</a><nav><a href="/" aria-current=page>Home</a><a href="book.html">The Book</a></nav></div><div class="wrap hero">
+<div class="eyebrow">The Flux Tax</div>
+<h1>Our labor should not be taxed. Our natural resources should.</h1>
+<p>One transparent tax on new things you choose to buy replaces income tax, property tax, sales tax, and every government fee. The rate rises and falls with what government actually needs.</p>
+</div></header>
 <main class="wrap"><article>
 <div class="opening">
-<p class="headline">Our labor should not be taxed. Our natural resources should.</p>
-<p>The Flux Tax replaces income, property, and sales taxes with one transparent tax on new goods and services. The rate rises and falls with what government actually needs, and every dollar is out in the open.</p>
 <p>Here is the short version. The whole idea is in <a href="book.html">the book</a>.</p>
 </div>
 <h1>The Flux Tax, in short</h1>
-<div class="ft-hint"><strong>Every line of this is open for debate.</strong> Highlight any sentence to ask a question, push back, or back it up. Highlighted passages show what people are talking about. Tap one to read the discussion. <span id="ft-count"></span><div id="ft-auth" class="ft-auth"></div></div>
+<div class="ft-hint"><strong>Every line of this is open for debate.</strong> Highlight any sentence to ask a question, push back, or back it up. Highlighted passages show what people are talking about. Tap one to read the discussion. <span id="ft-count"></span><br><button type="button" class="ft-demo-open" data-demo>&#9654; Watch how it works</button><div id="ft-auth" class="ft-auth"></div></div>
 <div id="policy" data-doc="fluxtax_home" data-title="Home: The Flux Tax in short">
 <p><strong>THE IDEA IN SHORT</strong></p>
 <p>Stop taxing what people earn. Stop taxing what people own. Tax only what people choose to buy new.</p>
+<h4>Every tax and fee, replaced</h4>
+<p>Income tax, property tax, sales tax, and every fee stacked on top of them, like vehicle registration, licenses, and permits, all go away. In their place is one general fund, created and paid for by the Flux Tax. One source of money, one public ledger, and nothing hiding in the fine print.</p>
 <h4>No income tax</h4>
 <p>Your paycheck is yours. No withholding, no filing, no audits, and no one going through your finances every April.</p>
 <h4>No property tax</h4>
@@ -50,7 +61,8 @@
 <section id="general-discussion"></section>
 <p class="ft-credit">This site uses <a href="https://blabbertree.com">Blabbertree</a> for comments. &copy; 2026 Blabbertree</p>
 </main>
-<footer><div class="wrap">Flux Tax</div></footer>
+<footer><div class="wrap">Flux Tax &middot; Your labor belongs to you</div></footer>
 <script src="blab.js"></script>
+<script src="demo.js"></script>
 </body>
 </html>
