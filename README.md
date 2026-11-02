@@ -1,13 +1,14 @@
 # fluxtax.com
 
-Flux Tax site (no candidate name on it, Darren's call 2026-11-02). Static site on GitHub Pages, same setup as `~/montana2028`.
+The Flux Tax site. General, not tied to any state or campaign, and no name on it (Darren's call 2026-11-02). Static site on GitHub Pages (custom domain via `CNAME`). DNS at GoDaddy: four A records to GitHub Pages, `www` CNAME to `darkarr11.github.io`.
 
 ## Pages
-- `index.html`: home. Seed line headline, short intro, then the Act's plain-language summary. docKey `fluxtax_home`.
-- `book.html`: *The Flux Tax: A Revolution in Voluntary Taxation*, full text. docKey `fluxtax_book`.
-- `act.html`: *The Montana Flux Tax Act*, full bill. docKey `fluxtax_act`.
+- `index.html`: home. Seed line headline, then the idea in short. docKey `fluxtax_home`.
+- `book.html`: *The Flux Tax: A Revolution in Voluntary Taxation*, full text, converted with pandoc 2026-11-02. docKey `fluxtax_book`.
 
-Book and Act text come from Genesis `docs/campaign/bills/flux-tax-book.md` and `montana-flux-tax-act.md`, converted with pandoc on 2026-11-02. If those change, the pages need regenerating.
+## Blabs (`blab.js`)
+Readers highlight any passage and blab on it, plus a General discussion box at the bottom. Blabs are stored in Blabbertree's Firestore (`blabbertree-app`), collection `blabs`. Anonymous by default; Google sign-in shows the account name. A name never comes from a text box.
 
-## Blabs
-`blab.js` is copied from montana2028 (only the header comment and email subject differ). Blabs go to BT Firestore (`blabbertree-app`), collection `blabs`. Identity rules for `fluxtax_*` docKeys live in `~/montana2028/firebase/firestore.rules` (the one live ruleset for both sites). New-blab emails go through FormSubmit to dkarr@mac.com, subject "New blab on Flux Tax: <page>".
+- **Rules:** this repo has no rules file. The live ruleset is kept in the private blabbertree repo, `firebase-live/firestore.rules`.
+- **Email alerts:** each new blab goes through FormSubmit to dkarr@mac.com, subject "New blab on Flux Tax: <page>". docKeys ending in `_test` never email.
+- **Moderation:** blabs can't be deleted from the client. Use the Firebase console.
